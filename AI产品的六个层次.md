@@ -1,5 +1,5 @@
-会用 AI coding 做东西，不等于会做 AI 系统。
-
+# AI 产品的六个层次
+## 会用 AI coding 做东西，不等于会做 AI 系统。
 
 
 
@@ -108,13 +108,13 @@ L5：我会把 AI 放进一个可靠流程。
 
 L6：我会设计一个 AI 驱动的系统。
 
-真正的壁垒是，能不能把模型放进真实工作流，并让它稳定、可控、可评估、可迭代、可主动运行。最终目标是：我能设计一个 AI 系统，让它在真实世界里可靠地替我工作。
+真正的壁垒是，能不能把模型放进真实工作流，并让它稳定、可控、可评估、可迭代、可主动运行。最终目标是：我能设计一个 AI 系统，让它在真实世�[...]
 
 案例： 
 
 正文
 
-过去一两年，很多人第一次感受到：只要会和 AI 对话，就能做出一些以前需要工程师才能做的东西。一个网页、一个 Chrome 插件、一个自动化脚本、一个日历工具、一个 tab 管理器，现在都可以通过 Cursor、Claude Code、Manus、Lovable、Replit 之类的工具快速生成出来。
+过去一两年，很多人第一次感受到：只要会和 AI 对话，就能做出一些以前需要工程师才能做的东西。一个网页、一个 Chrome 插件、一个自动化脚本、一��[...]
 
 这当然是巨大的进步。但它也制造了一个新的误会：
 
@@ -125,13 +125,13 @@ L6：我会设计一个 AI 驱动的系统。
 前者是：AI 帮你写代码。
 后者是：你设计了一个系统，让 AI 在用户使用产品时承担理解、判断、行动、记忆、协作和交付的职责。
 
-这两件事看起来很像，因为它们最后都可能产出一个 App。但本质完全不同。一个人可以用 AI 写出一个网页，却不懂 prompt 的稳定性、上下文架构、工具调用、workflow orchestration、evaluation、guardrails、agent loop、human handoff。这就像一个人能用乐高拼出房子的形状，不等于他懂建筑结构、承重、管线、消防和长期维护。
+这两件事看起来很像，因为它们最后都可能产出一个 App。但本质完全不同。一个人可以用 AI 写出一个网页，却不懂 prompt 的稳定性、上下文架构、工具�[...]
 
 这篇文章要讲清楚一个 distinction：
 
 
 
-AI 能力的提升，不是从“会用哪个工具”到“会用更强的工具”，而是从“消费模型输出”，到“构建可靠工作流”，再到“设计能长期运行的 AI 系统”。
+AI 能力的提升，不是从“会用哪个工具”到“会用更强的工具”，而是从“消费模型输出”，到“构建可靠工作流”，再到“设计能长期运行的 AI 系统�[...]
 
 我们社区把这个能力分成四档：L3 AI Consumer，L4 AI Tinkerer / Vibe Coder，L5 AI Builder，L6 AI Architect。下面我们用更精确的技术语言，把这四档讲清楚。
 
@@ -146,9 +146,9 @@ AI 能力的提升，不是从“会用哪个工具”到“会用更强的工�
 AI-assisted building = AI 在开发过程中帮你造软件
 AI runtime = AI 在产品运行过程中替用户工作
 
-比如你用 Cursor 做了一个普通日历工具。这个项目也许 80% 的代码都是 AI 帮你写的，但用户打开这个工具时，AI 并没有参与理解、判断、行动。这是 AI-assisted building，不是 AI 产品。
+比如你用 Cursor 做了一个普通日历工具。这个项目也许 80% 的代码都是 AI 帮你写的，但用户打开这个工具时，AI 并没有参与理解、判断、行动。这是 AI-as[...]
 
-反过来，一个 AI 邮件助手，哪怕代码很简单，只要用户使用时系统会读取邮件上下文、判断用户意图、生成回复、调用 Gmail API、等待用户确认、发送邮件，它就已经有了 AI runtime。
+反过来，一个 AI 邮件助手，哪怕代码很简单，只要用户使用时系统会读取邮件上下文、判断用户意图、生成回复、调用 Gmail API、等待用户确认、发送邮[...]
 
 所以判断一个东西是不是 AI 系统，不能看“开发时有没有用 AI”，而要看：
 
@@ -167,17 +167,17 @@ AI runtime = AI 在产品运行过程中替用户工作
 7. AI 是否有记忆、权限、评估和人工交接？
 8. AI 是否能主动触发，而不是等用户来问？
 
-这就是从 L3 到 L6 的真正分界线。目前，市面上对AI能力的理解，并不到位，但随着大浪淘沙，我预测，无论VC看startup，还是公司招候选人，也会用这样的问题和框架去考察对AI的驾驭能力。
+这就是从 L3 到 L6 的真正分界线。目前，市面上对AI能力的理解，并不到位，但随着大浪淘沙，我预测，无论VC看startup，还是公司招候选人，也会用这样�[...]
 
 
 
 二、已有行业框架怎么说
 
-这个 distinction 不是我们凭空发明的。Anthropic 在《Building Effective Agents》里把 agentic system 分成两类：workflow 和 agent。Workflow 是 LLM 和工具沿着预定义代码路径运行；agent 则是 LLM 动态决定自己的流程和工具使用，并控制如何完成任务。Anthropic 也提醒，很多场景不应该一上来就做复杂 agent；如果单次 LLM 调用、RAG 或简单 workflow 足够，就不要过早增加复杂度。(Anthropic)
+这个 distinction 不是我们凭空发明的。Anthropic 在《Building Effective Agents》里把 agentic system 分成两类：workflow 和 agent。Workflow 是 LLM 和工具沿着预定义代码��[...]
 
-OpenAI 在《A practical guide to building agents》里也给了类似边界：简单 chatbot、single-turn LLM、sentiment classifier 这类“集成了 LLM 但不让 LLM 控制 workflow execution”的应用，不算 agent。Agent 的关键是：LLM 能管理工作流执行、做决策、调用工具、判断任务是否完成，并在失败时停止或交还给用户。(OpenAI)
+OpenAI 在《A practical guide to building agents》里也给了类似边界：简单 chatbot、single-turn LLM、sentiment classifier 这类“集成了 LLM 但不让 LLM 控制 workflow execution”[...]
 
-Google Cloud 对 agent 的技术组件拆得更系统：models、grounding、tools、data architecture、orchestration、runtime。也就是说，一个成熟 agent 不是“一个 prompt + 一个 API”，而是模型、知识、工具、记忆、编排和运行时基础设施的组合。(Google Cloud)
+Google Cloud 对 agent 的技术组件拆得更系统：models、grounding、tools、data architecture、orchestration、runtime。也就是说，一个成熟 agent 不是“一个 prompt + 一个 API[...]
 
 这三个行业框架合起来，其实指向同一件事：
 
@@ -201,7 +201,7 @@ Google Cloud 对 agent 的技术组件拆得更系统：models、grounding、too
 
 例子包括：标题生成器、邮件润色器、简历优化器、文案生成器、简单聊天机器人。
 
-它当然有价值，因为很多单点任务确实可以被模型一次性解决。但它的问题也很明显：没有真实上下文，没有业务状态，没有工具调用，没有行动能力，没有可靠性机制。
+它当然有价值，因为很多单点任务确实可以被模型一次性解决。但它的问题也很明显：没有真实上下文，没有业务状态，没有工具调用，没有行动能力��[...]
 
 它的本质是：
 
@@ -241,7 +241,7 @@ citation
 freshness control
 hallucination reduction
 
-Google Cloud 也把 grounding 视为 agent 准确性和可信度的关键机制，并指出 RAG 把 agent 连接到可验证、实时的数据源，让系统基于事实行动，而不是靠幻觉输出。(Google Cloud)
+Google Cloud 也把 grounding 视为 agent 准确性和可信度的关键机制，并指出 RAG 把 agent 连接到可验证、实时的数据源，让系统基于事实行动，而不是靠幻觉输�[...]
 
 这一层的本质是：
 
@@ -353,9 +353,9 @@ tracing / logs
 retry / fallback
 stop condition
 
-OpenAI 把 orchestration pattern 分成 single-agent systems 和 multi-agent systems：single-agent 是一个模型带着工具和 instructions 在 loop 里执行 workflow；multi-agent 则把 workflow 分给多个 coordinated agents。(OpenAI)
+OpenAI 把 orchestration pattern 分成 single-agent systems 和 multi-agent systems：single-agent 是一个模型带着工具和 instructions 在 loop 里执行 workflow；multi-agent 则把 workflo[...]
 
-Google Cloud 也把 ReAct 描述为 reason → act → observe 的动态多轮循环：agent 评估目标和状态，选择工具，接收工具输出，再把新信息纳入下一步推理。(Google Cloud)
+Google Cloud 也把 ReAct 描述为 reason → act → observe 的动态多轮循环：agent 评估目标和状态，选择工具，接收工具输出，再把新信息纳入下一步推理。(Google [...]
 
 这一层的本质是：
 
@@ -419,7 +419,7 @@ agent runner
 approval policy
 action queue
 
-例子包括：每日 briefing、会议前自动准备资料、客户邮件自动判断紧急程度、项目风险提前提醒、自动 inbox triage、个人 chief of staff、企业内部 agent platform。
+例子包括：每日 briefing、会议前自动准备资料、客户邮件自动判断紧急程度、项目风险提前提醒、自动 inbox triage、个人 chief of staff、企业内部 agent platfo[...]
 
 这一层的本质是：
 
@@ -454,7 +454,7 @@ AI 给出答案
 我判断好不好
 不好就 regenerate 或换个问法
 
-这意味着你高度依赖模型的即时表现。如果答案错了，你通常不知道错在哪里；如果结果不稳定，你也不知道怎么让它稳定；如果上下文太长，你不知道怎么组织；如果任务复杂，你只能不断补充说明。
+这意味着你高度依赖模型的即时表现。如果答案错了，你通常不知道错在哪里；如果结果不稳定，你也不知道怎么让它稳定；如果上下文太长，你不知��[...]
 
 L3 的 mindset 是：
 
@@ -525,7 +525,7 @@ L5 是业余玩家和职业选手的分界线：
 
 职场不相信“大概能跑”。职场需要稳定交付。
 
-L5 的核心行为不是“生成一个 demo”，而是“构建一个可靠 workflow”。你开始知道：AI 的价值不在于一次性输出，而在于能不能稳定地嵌入一个真实工作流程。
+L5 的核心行为不是“生成一个 demo”，而是“构建一个可靠 workflow”。你开始知道：AI 的价值不在于一次性输出，而在于能不能稳定地嵌入一个真实工作[...]
 
 L5 通常能做这些事：
 
@@ -627,7 +627,7 @@ L6：The AI Architect
 
 L6 是我们希望培养的顶尖形态。
 
-到了 L6，你不再是寻找“最强模型”和“最新工具”的用户，而是一个系统架构师。你关心的不只是单次输出质量，而是整个系统如何长期运行、如何接入数据、如何选择工具、如何处理失败、如何跨越 context wall、如何主动为用户工作。
+到了 L6，你不再是寻找“最强模型”和“最新工具”的用户，而是一个系统架构师。你关心的不只是单次输出质量，而是整个系统如何长期运行、如何��[...]
 
 L6 的核心行为是：设计一个能在真实世界运行的 AI architecture。
 
@@ -648,7 +648,7 @@ tracing
 runtime
 proactive triggers
 
-Google Cloud 在 agent design pattern 里也强调，选择 agent 架构要看任务复杂度、延迟、成本、人类介入需求；如果任务高度结构化或单次模型调用即可完成，就不一定需要 agentic workflow。(Google Cloud)
+Google Cloud 在 agent design pattern 里也强调，选择 agent 架构要看任务复杂度、延迟、成本、人类介入需求；如果任务高度结构化或单次模型调用即可完成，��[...]
 
 L6 的关键不是“更复杂”，而是“复杂得有理由”。
 
@@ -726,7 +726,7 @@ L6 真正关心的是：不同模型、工具、数据源、agent、人类审批
 什么时候交给另一个 agent
 什么时候交给人
 
-OpenAI 把 multi-agent 分为两类常见模式：manager pattern，也就是中心 agent 协调多个 specialized agents；decentralized handoff，也就是 agents 之间根据专长互相移交任务。(OpenAI)
+OpenAI 把 multi-agent 分为两类常见模式：manager pattern，也就是中心 agent 协调多个 specialized agents；decentralized handoff，也就是 agents 之间根据专长互相移交任��[...]
 
 Orchestration 的本质是：
 
@@ -740,7 +740,7 @@ Orchestration 的本质是：
 
 Building what you can't buy.
 
-大厂会提供通用模型、通用工具、通用 agent framework。但你的个人数据、工作流、判断标准、业务上下文、协作习惯、风险偏好、长期目标，不会被一个通用产品完整覆盖。
+大厂会提供通用模型、通用工具、通用 agent framework。但你的个人数据、工作流、判断标准、业务上下文、协作习惯、风险偏好、长期目标，不会被一个�[...] 
 
 L6 构建的是自己的 AI operating system。
 
@@ -750,7 +750,7 @@ L6 构建的是自己的 AI operating system。
 
 可以用一张表总结：
 
-层级关键词你在做什么AI 在系统里的角色主要局限L3 AI ConsumerChatting问 AI、用 AI 回答咨询师依赖模型运气，不会稳定化L4 AI Tinkerer / Vibe CoderOne-off用 AI 写代码、做 demo外包 / 代码生成器happy path 可以，edge cases 崩L5 AI BuilderReliability & Iteration构建可靠 workflow逻辑引擎主要处理可控流程，开放任务较难L6 AI ArchitectOrchestration & Integration设计 AI 系统架构系统控制层 / 智能层需要综合工程、产品、数据和评估能力
+层级关键词你在做什么AI 在系统里的角色主要局限L3 AI ConsumerChatting问 AI、用 AI 回答咨询师依赖模型运气，不会稳定化L4 AI Tinkerer / Vibe CoderOne-off用 AI 写�[...]
 
 更锋利地说：
 
@@ -763,7 +763,7 @@ L6：我会设计一个 AI 驱动的系统。
 
 七、再看“AI coding”和“AI product”的区别
 
-很多 web coding 博主会做一些小工具：日历工具、tab 管理工具、浏览器插件、任务清单、AI 总结器。这些项目当然值得做，因为它们能训练产品感、工程感和快速试错能力。
+很多 web coding 博主会做一些小工具：日历工具、tab 管理工具、浏览器插件、任务清单、AI 总结器。这些项目当然值得做，因为它们能训练产品感、工程�[...]
 
 但我们要清楚：它们可能属于不同层级。
 
@@ -779,7 +779,7 @@ Prompt wrapper
 
 Grounded + Tool-using AI
 
-一个真正的浏览器 research agent，如果能持续跟踪你的研究目标，判断哪些页面相关，主动整理资料，发现矛盾信息，调用搜索、笔记、文件、日历工具，并在不确定时向你确认，那它才接近：
+一个真正的浏览器 research agent，如果能持续跟踪你的研究目标，判断哪些页面相关，主动整理资料，发现矛盾信息，调用搜索、笔记、文件、日历工具��[...]
 
 Agentic core / AI-native system
 
@@ -829,7 +829,7 @@ Agentic core / AI-native system
 
 第一，它能避免虚假自信。
 
-L4 的作品很容易让人觉得“我已经会做 AI 产品了”。但很多时候你只是会生成 demo，还没有处理可靠性、上下文、评估、权限、异常和长期维护。知道层级之后，你不会把 one-off prototype 误认为 production system。
+L4 的作品很容易让人觉得“我已经会做 AI 产品了”。但很多时候你只是会生成 demo，还没有处理可靠性、上下文、评估、权限、异常和长期维护。知道��[...]
 
 第二，它能让学习路径更清楚。
 
